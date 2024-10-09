@@ -1,4 +1,4 @@
-import React, { useState,useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Resizable } from "re-resizable";
 import AceEditor from "react-ace";
 
@@ -19,20 +19,20 @@ import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/theme-tomorrow";
 import "ace-builds/src-noconflict/theme-kuroir";
 import "ace-builds/src-noconflict/theme-xcode";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Form } from "react-bootstrap";
 import DropdownSelector from "./DropdownSelector";
 import html2canvas from "html2canvas";
 
 function Home() {
   const [language, setLanguage] = useState("javascript");
-  const [theme, setTheme] = useState("github");
+  const [theme, setTheme] = useState("twilight");
   const [code, setCode] = useState('console.log("Hello World")');
   const [icon, setIcon] = useState("/icons/javascript.svg");
   const [background, setBackground] = useState(
     "linear-gradient(354deg,#ff75b5,#ffb86c)"
   );
-  const [width,setWidth]=useState("1000");
-  const [height,setHeight]=useState("522");
+  const [width, setWidth] = useState(800);
+  const [height, setHeight] = useState(500);
   const editorRef = useRef(null);
 
   const getLanguageChange = (selectLanguage) => {
@@ -56,8 +56,8 @@ function Home() {
   };
 
   const exportPng = async () => {
-    const editorElem = editorRef.current;
-
+    const editorElem = document.querySelector(".resize_element");
+    console.log(editorElem);
     if (editorElem) {
       const handleElems = document.querySelectorAll(".handle");
       const cursorElem = document.querySelector(".ace_cursor");
@@ -92,11 +92,10 @@ function Home() {
     }
   };
 
-  const handleResize=(e, direction, ref, d)=>{
-    setHeight(d.height);
-    // setWidth(width+ref.width);
-    // setHeight(height+ref.height);
-  }
+  const handleResize = (e, direction, ref, d) => {
+    const newHeight = ref.style.height;
+    setHeight(parseInt(newHeight, 10));
+  };
 
   const updateSize = () => {
     setWidth(window.innerWidth);
@@ -120,21 +119,29 @@ function Home() {
               exportImage={exportPng}
             />
           </Col>
-          <Col lg={9} md={8} sm={12}>
-            <div ref={editorRef}>
+          <Col lg={9} md={8} sm={12} ref={editorRef}>
             <Resizable
-              minHeight={522}
-              minWidth={700}
-              maxWidth={1000}
+              minHeight={500}
+              minWidth={510}
+              maxWidth={800}
               defaultSize={{
                 width: width,
                 height: height || 500,
               }}
               style={{ background: background }}
               onResize={handleResize}
+              className="resize_element"
             >
-              <div className="d-flex justify-content-center-align-items-center">
-                <img src={icon} className="avatar" alt="" />
+              <div className="p-4">
+                <div className="d-flex justify-content-between input_title">
+                  <Form.Control
+                    size="lg"
+                    type="text"
+                  />
+                  <div className="d-flex justify-content-center align-items-center me-4">
+                    <img src={icon} className="avatar" alt="" />
+                  </div>
+                </div>
                 <AceEditor
                   mode={language.toLocaleLowerCase()}
                   theme={theme}
@@ -143,13 +150,13 @@ function Home() {
                   showPrintMargin={false}
                   highlightActiveLine={false}
                   value={code}
+                  height={`${height - 120}px`}
                   editorProps={{ $blockScrolling: true }}
-                  onChange={handleCodeChange}
                   className="ace-editor-container"
+                  onChange={handleCodeChange}
                 />
               </div>
             </Resizable>
-            </div>
           </Col>
         </Row>
       </Container>
