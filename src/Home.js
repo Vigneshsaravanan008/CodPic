@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { Resizable } from "re-resizable";
 import AceEditor from "react-ace";
 import { GrGithub } from "react-icons/gr";
-import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
-import { Badge,Image } from "react-bootstrap";
-import logo from "./logo.svg";
-
+import { Badge,Button } from "react-bootstrap";
+import { FaCode } from "react-icons/fa";
 import "ace-builds/webpack-resolver";
 //languages
 import "ace-builds/src-noconflict/mode-javascript";
@@ -117,7 +117,20 @@ console.log(calcAddition(6,9));`);
   return (
     <div className="App py-lg-3">
       <Container className="py-lg-5 py-4 py-md-5">
-        <h3 className=""> <span className="text-header">Cod</span><span className="text-header">Pic</span></h3>
+        <div className="d-flex justify-content-between">
+            <h3 className=""> 
+                <span className="text-header">Cod</span><span className="text-header">Pic</span>
+            </h3>
+            <Button
+                href="https://vigneshsaravanan.vercel.app/"
+                className="home_button"
+                target="_blank"
+                rel="noopener"
+                variant="outline-light"
+            >
+                <FaCode /> Dev <GoArrowUpRight />
+            </Button>
+        </div>
         <Row>
           <Col lg={3} md={4} sm={12}>
             <DropdownSelector
