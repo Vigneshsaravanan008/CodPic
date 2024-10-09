@@ -65,3 +65,19 @@
   border: 2px solid hsla(0, 0%, 98%, 0.08);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+.home_button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.footer_icons {
+  width: 65px;
+  height: 65px;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  /* background-color: #000; */
+}

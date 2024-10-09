@@ -1,14 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import logo from "./logo.svg";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
+import Error from "./Error";
 
 function App() {
   return (
-    <div className="App d-flex justify-content-center align-items-center">
-        <Home/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;

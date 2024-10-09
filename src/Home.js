@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Resizable } from "re-resizable";
 import AceEditor from "react-ace";
+import { GrGithub } from "react-icons/gr";
+import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 import "ace-builds/webpack-resolver";
 //languages
@@ -107,7 +110,7 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <div className="App py-lg-5">
       <Container className="py-lg-5 py-4 py-md-5">
         <Row>
           <Col lg={3} md={4} sm={12}>
@@ -159,8 +162,17 @@ function Home() {
             </Resizable>
           </Col>
         </Row>
+        <div className="d-flex flex-lg-row flex-column justify-content-center justify-content-lg-between align-items-center text-center py-lg-5 py-md-5 py-5">
+          <p className='text-white text-lg-start mb-1'>Built From Scratch With 💚</p>
+          <p className='text-white text-lg-start mb-0'> © {new Date().getFullYear()} All rights reserved </p>
+          <div>
+            <Link target='_blank' to="https://github.com/Vigneshsaravanan008" rel="noopener" aria-label="Github Account"><GrGithub className="footer_icons px-3" /></Link>
+            {/* <Link target='_blank' to="https://www.instagram.com/vignesh___saravanan" rel="noopener" aria-label="Instagram Account"><IoLogoInstagram className="footer_icons px-3" /></Link> */}
+            <Link target='_blank' to="https://www.linkedin.com/in/vignesh-saravanan-9839481a4/" rel="noopener" aria-label="Linkedin Account"><IoLogoLinkedin className="footer_icons px-3" /></Link>
+          </div>
+        </div>
       </Container>
-    </>
+    </div>
   );
 }
 

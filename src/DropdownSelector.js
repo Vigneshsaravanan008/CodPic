@@ -90,10 +90,12 @@ function DropdownSelector({onLanguageChange,onThemeChange,onBackgroundChange,onI
               </DropdownButton>
             </Form.Group>
           </Form>
-            <Button onClick={exportImage} variant="outline-primary">
+          <div className="d-flex justify-content-center">
+            <Button onClick={exportImage} className="home_button" variant="light">
                 <Download />
                 Export PNG
             </Button>
+          </div>
         </Card.Body>
       </Card>
     </>
