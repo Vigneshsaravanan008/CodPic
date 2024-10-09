@@ -2,7 +2,7 @@
 
 ## Overview
 
-<p align="center"><a href="https://codpic.vercel.app/" target="_blank"><img src="https://codpic.vercel.app/logo.png" width="400" alt="CodPic Logo"></a></p>
+<p align="center"><a href="https://codpic.vercel.app/" target="_blank"><img src="https://codpic.vercel.app/logo.png" width="100%" alt="CodPic Logo"></a></p>
 
 **CodePic** is a free online tool that allows developers and programmers to convert their code snippets into beautiful, shareable images. With customizable themes and syntax highlighting, CodePic is perfect for showcasing your code on social media, documentation, or personal projects.
 
@@ -35,11 +35,11 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License.
 
 ## Contact
 
-For inquiries or support, reach out at: [your-email@example.com](mailto:your-email@example.com).
+For inquiries or support, reach out at: [vigneshsaravanan0026@gmail.com](mailto:vigneshsaravanan0026@gmail.com).
 
 ---
 
