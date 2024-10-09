@@ -115,8 +115,9 @@ console.log(calcAddition(6,9));`);
   }, []);
 
   return (
-    <div className="App py-lg-5">
+    <div className="App py-lg-3">
       <Container className="py-lg-5 py-4 py-md-5">
+        <h3 className=""> <span className="text-header">Cod</span><span className="text-header">Pic</span></h3>
         <Row>
           <Col lg={3} md={4} sm={12}>
             <DropdownSelector
@@ -151,7 +152,7 @@ console.log(calcAddition(6,9));`);
                   <Form.Control
                     size="lg"
                     type="text"
-                    className="text-center"
+                    className="text-center text-title"
                     value="app.js"
                   />
                   <div className="d-flex justify-content-center align-items-center me-4">

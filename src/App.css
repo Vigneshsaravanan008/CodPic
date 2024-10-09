@@ -54,11 +54,13 @@
 
 .form-control {
   background-color: #3f2920 !important;
-  color: #fff !important;
-  border:transparent !important;
+  color: #7a6f6f !important;
+  border: transparent !important;
+  font-size: 18px !important;
+  /* color:#333 !important; */
 }
 
-.input_title{
+.input_title {
   background-color: #3f2920 !important;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -83,7 +85,7 @@
   /* background-color: #000; */
 }
 
-.form-control:focus{
+.form-control:focus {
   box-shadow: none !important;
 }
 
@@ -99,4 +101,23 @@
   width: 100%;
   height: 1px;
   background-image: linear-gradient(to right, rgba(51, 51, 51, 0), #333, rgba(51, 51, 51, 0));
+}
+
+.text-header {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #4ca5ff, #b573f8);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  animation: 3s infinite alternate colorChange
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    background: linear-gradient(90deg, #4ca5ff, #b573f8)
+  }
+
+  50% {
+    background: linear-gradient(90deg, #b573f8, #4ca5ff)
+  }
 }
