@@ -4,7 +4,7 @@ import { languages, backgrounds, themes } from "./utils/utilities";
 import { Download } from "lucide-react";
 
 function DropdownSelector({onLanguageChange,onThemeChange,onBackgroundChange,onIconChange,exportImage}) {
-    const [background,setBackground]=useState("linear-gradient(354deg,#ff75b5,#ffb86c)")
+    const [background,setBackground]=useState("linear-gradient(337deg,#654ea3,#da98b4)")
     const getLanguageChange=(e)=>{
         onLanguageChange(e.target.value);
         onIconChange(e.target.childNodes[e.target.selectedIndex].getAttribute('data-icon'));

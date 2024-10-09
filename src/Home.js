@@ -4,6 +4,8 @@ import AceEditor from "react-ace";
 import { GrGithub } from "react-icons/gr";
 import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { Badge,Image } from "react-bootstrap";
+import logo from "./logo.svg";
 
 import "ace-builds/webpack-resolver";
 //languages
@@ -29,10 +31,13 @@ import html2canvas from "html2canvas";
 function Home() {
   const [language, setLanguage] = useState("javascript");
   const [theme, setTheme] = useState("twilight");
-  const [code, setCode] = useState('console.log("Hello World")');
+  const [code, setCode] = useState(`function calcAddition(number1, number2) { 
+    return number1 + number2; 
+}
+console.log(calcAddition(6,9));`);
   const [icon, setIcon] = useState("/icons/javascript.svg");
   const [background, setBackground] = useState(
-    "linear-gradient(354deg,#ff75b5,#ffb86c)"
+    "linear-gradient(337deg,#654ea3,#da98b4)"
   );
   const [width, setWidth] = useState(800);
   const [height, setHeight] = useState(500);
@@ -136,10 +141,18 @@ function Home() {
               className="resize_element"
             >
               <div className="p-4">
+                
                 <div className="d-flex justify-content-between input_title">
+                    <div className="d-flex justify-content-center align-items-center ms-2">
+                        <Badge pill bg="danger" className="me-1" style={{ width: '12px', height: '12px' }}>&nbsp;</Badge>
+                        <Badge pill bg="warning" className="me-1" style={{ width: '12px', height: '12px' }}>&nbsp;</Badge>
+                        <Badge pill bg="success" className="me-1" style={{ width: '12px', height: '12px' }}>&nbsp;</Badge>
+                    </div>
                   <Form.Control
                     size="lg"
                     type="text"
+                    className="text-center"
+                    value="app.js"
                   />
                   <div className="d-flex justify-content-center align-items-center me-4">
                     <img src={icon} className="avatar" alt="" />
@@ -149,7 +162,7 @@ function Home() {
                   mode={language.toLocaleLowerCase()}
                   theme={theme}
                   fontSize={14}
-                  showGutter={false}
+                //   showGutter={false}
                   showPrintMargin={false}
                   highlightActiveLine={false}
                   value={code}
@@ -162,7 +175,7 @@ function Home() {
             </Resizable>
           </Col>
         </Row>
-        <div className="d-flex flex-lg-row flex-column justify-content-center justify-content-lg-between align-items-center text-center py-lg-5 py-md-5 py-5">
+        <div className="d-flex flex-lg-row flex-column justify-content-center justify-content-lg-between align-items-center text-center py-lg-1 py-md-1 py-1 mt-5 border_footer">
           <p className='text-white text-lg-start mb-1'>Built From Scratch With 💚</p>
           <p className='text-white text-lg-start mb-0'> © {new Date().getFullYear()} All rights reserved </p>
           <div>
