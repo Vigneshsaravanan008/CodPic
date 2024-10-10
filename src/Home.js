@@ -198,6 +198,7 @@ console.log(calcAddition(6,9));`);
             <Link target='_blank' to="https://www.linkedin.com/in/vignesh-saravanan-9839481a4/" rel="noopener" aria-label="Linkedin Account"><IoLogoLinkedin className="footer_icons px-3" /></Link>
           </div>
         </div>
+        <a className="producthunt_badge"  rel="noreferrer" href="https://www.producthunt.com/posts/codpic-code-to-image?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-codpic&#0045;code&#0045;to&#0045;image" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=496132&theme=dark" alt="Codpic&#0032;&#0045;&#0032;Code&#0032;To&#0032;Image - Code&#0032;to&#0032;Image | Product Hunt" style={{width: "150px",height: "54px"}} width="150" height="54" /></a>
       </Container>
     </div>
   );

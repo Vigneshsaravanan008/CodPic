@@ -33,7 +33,7 @@ function DropdownSelector({onLanguageChange,onThemeChange,onBackgroundChange,onI
                 <option>Select Language</option>
                 {languages.map(function (value, key) {
                   return (
-                    <option value={value.name} data-icon={value.icon} key={key} selected={key == 0}>
+                    <option value={value.name} data-icon={value.icon} key={key} selected={key === 0}>
                       {value.name}
                     </option>
                   );
@@ -47,7 +47,7 @@ function DropdownSelector({onLanguageChange,onThemeChange,onBackgroundChange,onI
                 <option>Select Themes</option>
                 {themes.map(function (value, key) {
                   return (
-                    <option value={value}  key={key} selected={key == 0}>
+                    <option value={value}  key={key} selected={key === 0}>
                       {value}
                     </option>
                   );

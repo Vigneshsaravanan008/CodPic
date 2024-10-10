@@ -121,3 +121,9 @@
     background: linear-gradient(90deg, #b573f8, #4ca5ff)
   }
 }
+
+.producthunt_badge {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
