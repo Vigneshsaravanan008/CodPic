@@ -1,0 +1,129 @@
+.App {
+  background-color: #0d0d0d;
+  color: #848484;
+  min-height: 100vh;
+}
+
+.dropdown_form {
+  background: linear-gradient(180deg, #242424, #121212 65.62%);
+  border-radius: 12px;
+  background-color: #0a0a0a;
+  border-radius: 12px;
+}
+
+.form-select {
+  background-color: #241d1d !important;
+  color: #fff !important;
+}
+
+.dropdown-toggle {
+  background-color: #241d1d !important;
+  border-color: #0a0a0a !important;
+}
+
+.dropdown-menu {
+  padding: 0.25rem 0 0.4rem 0.5rem !important;
+  position: absolute;
+  background-color: #191919 !important;
+  border: 1px solid #3c3c3c !important;
+  border-radius: 3px !important;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+}
+
+.ace-editor-container {
+  width: 100% !important;
+}
+
+.ace_editor {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(249, 249, 249, 0.08);
+  border-top: none;
+  font-weight: 500 !important;
+  font-size: 17px !important;
+  line-height: 1.5rem !important;
+}
+
+.form-control {
+  background-color: #3f2920 !important;
+  color: #7a6f6f !important;
+  border: transparent !important;
+  font-size: 18px !important;
+  /* color:#333 !important; */
+}
+
+.input_title {
+  background-color: #3f2920 !important;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border: 2px solid hsla(0, 0%, 98%, 0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+.home_button {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.footer_icons {
+  width: 65px;
+  height: 65px;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  /* background-color: #000; */
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.border_footer {
+  position: relative;
+}
+
+.border_footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(51, 51, 51, 0), #333, rgba(51, 51, 51, 0));
+}
+
+.text-header {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #4ca5ff, #b573f8);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  animation: 3s infinite alternate colorChange
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    background: linear-gradient(90deg, #4ca5ff, #b573f8)
+  }
+
+  50% {
+    background: linear-gradient(90deg, #b573f8, #4ca5ff)
+  }
+}
+
+.producthunt_badge {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
