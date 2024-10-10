@@ -21,7 +21,7 @@
 3. **Customize Settings**: Choose your desired theme and any other settings.
 4. **Preview & Download**: Preview the generated image and click the download button to save it to your device.
 
-## Usage
+## Usages
 
 Simply use CodPic to convert code snippets for:
 
