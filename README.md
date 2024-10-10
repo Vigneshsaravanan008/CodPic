@@ -1,10 +1,10 @@
-# CodePic
+# CodPic
 
 ## Overview
 
 <p align="center"><a href="https://codpic.vercel.app/" target="_blank"><img src="https://codpic.vercel.app/logo.png" width="100%" alt="CodPic Logo"></a></p>
 
-**CodePic** is a free online tool that allows developers and programmers to convert their code snippets into beautiful, shareable images. With customizable themes and syntax highlighting, CodePic is perfect for showcasing your code on social media, documentation, or personal projects.
+**CodPic** is a free online tool that allows developers and programmers to convert their code snippets into beautiful, shareable images. With customizable themes and syntax highlighting, CodPic is perfect for showcasing your code on social media, documentation, or personal projects.
 
 ## Features
 
@@ -16,14 +16,14 @@
 
 ## Getting Started
 
-1. **Visit the Website**: Go to [CodePic](https://codpic.vercel.app/).
+1. **Visit the Website**: Go to [CodPic](https://codpic.vercel.app/).
 2. **Paste Your Code**: Enter your code snippet into the provided text area.
 3. **Customize Settings**: Choose your desired theme and any other settings.
 4. **Preview & Download**: Preview the generated image and click the download button to save it to your device.
 
 ## Usage
 
-Simply use CodePic to convert code snippets for:
+Simply use CodPic to convert code snippets for:
 
 - **Social Media**: Share your code on platforms like Twitter, Facebook, or LinkedIn.
 - **Documentation**: Include visually appealing code images in your projects and documentation.
@@ -43,4 +43,4 @@ For inquiries or support, reach out at: [vigneshsaravanan0026@gmail.com](mailto:
 
 ---
 
-Thank you for using CodePic!
+Thank you for using CodPic!

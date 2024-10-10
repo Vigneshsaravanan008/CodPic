@@ -166,7 +166,7 @@ console.log(calcAddition(6,9));`);
                     size="lg"
                     type="text"
                     className="text-center text-title"
-                    value="app.js"
+                    defaultValue="app.js"
                   />
                   <div className="d-flex justify-content-center align-items-center me-4">
                     <img src={icon} className="avatar" alt="" />
